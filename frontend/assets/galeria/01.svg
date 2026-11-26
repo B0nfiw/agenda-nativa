@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-label="Galeria demonstrativa 1">
+  <rect width="900" height="1200" fill="#3A1728"/>
+  <circle cx="250" cy="250" r="240" fill="#A84C6A"/>
+  <path d="M0 810c150-83 306-115 468-95 190 24 334 111 432 262v223H0V810Z" fill="#F2E6D8"/>
+  <path d="M148 760c92-148 192-218 300-210 139 10 219 141 336 111 42-11 81-38 116-82v621H148V760Z" fill="#171016" opacity=".72"/>
+</svg>

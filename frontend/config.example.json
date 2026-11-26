@@ -1,0 +1,124 @@
+{
+  "salon": {
+    "name": "Studio Aurora",
+    "shortName": "Aurora",
+    "tagline": "Demonstração para salões de beleza",
+    "description": "Explore um modelo configurável de site para salões de beleza. Escolha um serviço e teste o fluxo de solicitação de horário.",
+    "aboutTitle": "Beleza com atendimento próximo, organizado e sem pressa.",
+    "aboutText": "O Studio Aurora reúne serviços de cabelo, finalização e tratamento em uma experiência simples para a cliente: informações claras, serviços fáceis de escolher e solicitação de horário enviada já organizada pelo WhatsApp.",
+    "whatsapp": "",
+    "instagram": "",
+    "address": "Endereço ilustrativo",
+    "mapsUrl": "",
+    "businessHours": [
+      {
+        "days": "Segunda a sexta",
+        "hours": "09:00 às 19:00"
+      },
+      {
+        "days": "Sábado",
+        "hours": "09:00 às 17:00"
+      }
+    ]
+  },
+  "theme": {
+    "background": "#171016",
+    "surface": "#21151F",
+    "primary": "#A84C6A",
+    "secondary": "#3A1728",
+    "accent": "#A8B9A3",
+    "text": "#FFF9F2",
+    "mutedText": "#D3C7C0"
+  },
+  "assets": {
+    "logo": "./assets/logo.svg",
+    "hero": "./assets/capa.svg",
+    "gallery": [
+      "./assets/galeria/01.svg",
+      "./assets/galeria/02.svg",
+      "./assets/galeria/03.svg",
+      "./assets/galeria/04.svg"
+    ]
+  },
+  "services": [
+    {
+      "id": "escova-modelada",
+      "name": "Escova modelada",
+      "description": "Finalização leve, elegante e prática para o dia a dia.",
+      "price": "A partir de R$ 60",
+      "durationMinutes": 50,
+      "enabled": true
+    },
+    {
+      "id": "corte-feminino",
+      "name": "Corte feminino",
+      "description": "Corte com avaliação do formato do rosto e da rotina da cliente.",
+      "price": "A partir de R$ 75",
+      "durationMinutes": 60,
+      "enabled": true
+    },
+    {
+      "id": "coloracao",
+      "name": "Coloração",
+      "description": "Cor, brilho e manutenção com orientação antes do procedimento.",
+      "price": "Sob consulta",
+      "durationMinutes": 120,
+      "enabled": true
+    },
+    {
+      "id": "tratamento-capilar",
+      "name": "Tratamento capilar",
+      "description": "Hidratação, reconstrução e cuidado conforme a necessidade do fio.",
+      "price": "A partir de R$ 90",
+      "durationMinutes": 75,
+      "enabled": true
+    }
+  ],
+  "professionals": [
+    {
+      "id": "ana",
+      "name": "Ana",
+      "role": "Cabeleireira",
+      "photo": "./assets/equipe/ana.svg",
+      "enabled": true
+    },
+    {
+      "id": "bia",
+      "name": "Bia",
+      "role": "Especialista em finalização",
+      "photo": "./assets/equipe/bia.svg",
+      "enabled": true
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Cliente do salão",
+      "text": "Atendimento cuidadoso, ambiente bonito e ficou muito mais fácil solicitar um horário.",
+      "enabled": true
+    },
+    {
+      "name": "Cliente do salão",
+      "text": "Gostei porque mando tudo certo pelo WhatsApp, sem ficar explicando várias vezes.",
+      "enabled": true
+    }
+  ],
+  "faq": [
+    {
+      "question": "O horário já fica confirmado ao enviar?",
+      "answer": "Não. O envio pelo WhatsApp representa uma solicitação. O salão confirmará a disponibilidade diretamente com você.",
+      "enabled": true
+    },
+    {
+      "question": "Posso tirar dúvidas antes de escolher o serviço?",
+      "answer": "Sim. Use a observação do formulário para explicar sua dúvida ou preferência.",
+      "enabled": true
+    }
+  ],
+  "booking": {
+    "mode": "preview",
+    "allowProfessionalSelection": true,
+    "allowDateSelection": true,
+    "allowTimeSelection": true,
+    "messageTemplate": "Olá! Gostaria de solicitar um agendamento."
+  }
+}

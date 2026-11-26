@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Foto demonstrativa de profissional">
+  <rect width="600" height="450" fill="#3A1728"/>
+  <circle cx="300" cy="155" r="92" fill="#F2E6D8"/>
+  <path d="M145 450c28-111 91-166 188-166s160 55 188 166H145Z" fill="#A84C6A"/>
+  <path d="M211 157c18-94 77-141 178-141 35 34 55 76 60 126-52-48-102-63-150-47-35 11-64 32-88 62Z" fill="#171016"/>
+</svg>

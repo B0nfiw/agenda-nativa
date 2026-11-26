@@ -1,0 +1,22 @@
+# Configurações locais e credenciais
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets/
+secrets_local/
+
+# Dependências e arquivos gerados
+node_modules/
+clientes/
+release/
+dist/
+coverage/
+*.log
+*.tmp
+*.zip
+.DS_Store
+Thumbs.db

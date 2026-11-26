@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Site configurável com solicitação de agendamento online para salões de beleza." />
+  <title>Agenda Nativa</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Voltar ao início">
+      <span class="brand-mark">
+        <img data-logo hidden alt="" />
+        <span data-brand-initials>AN</span>
+      </span>
+      <span class="brand-copy">
+        <strong data-brand-name>Carregando...</strong>
+        <small data-brand-tagline>Solicitação de agendamento</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-label="Abrir menu">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav">
+      <a href="#servicos">Serviços</a>
+      <a href="#agenda">Solicitar horário</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <div id="appStatus" class="app-status" role="status">
+    <span>Carregando informações do salão...</span>
+  </div>
+
+  <main id="app" hidden>
+    <section id="inicio" class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow" data-hero-eyebrow></p>
+        <h1 data-hero-title></h1>
+        <p class="lead" data-hero-description></p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#agenda">Solicitar horário</a>
+          <a class="btn ghost" href="#servicos">Ver serviços</a>
+        </div>
+      </div>
+
+      <aside class="hero-card reveal">
+        <div class="image-frame">
+          <div class="fake-photo gradient-one" data-hero-image role="img"></div>
+        </div>
+        <div class="floating-note">
+          <strong>Horários de atendimento</strong>
+          <span data-business-summary></span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section split">
+      <div class="reveal">
+        <p class="section-kicker">Sobre o salão</p>
+        <h2 data-about-title></h2>
+      </div>
+      <p class="section-text reveal" data-about-text></p>
+    </section>
+
+    <section id="servicos" class="section">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Serviços</p>
+        <h2>Escolha o cuidado ideal</h2>
+      </div>
+
+      <div class="service-grid" data-services-grid></div>
+    </section>
+
+    <section id="equipe" class="section team-section" hidden>
+      <div class="section-heading reveal">
+        <p class="section-kicker">Equipe</p>
+        <h2>Profissionais do salão</h2>
+      </div>
+
+      <div class="team-grid" data-professionals-grid></div>
+    </section>
+
+    <section id="agenda" class="section booking-section">
+      <div class="booking-panel reveal">
+        <div>
+          <p class="section-kicker">Agendamento</p>
+          <h2>Monte sua solicitação em menos de um minuto.</h2>
+          <p class="section-text" data-booking-intro>
+            O envio pelo WhatsApp representa uma solicitação de horário.
+            O salão confirmará a disponibilidade diretamente com você.
+          </p>
+        </div>
+
+        <form id="bookingForm" class="booking-form" autocomplete="on" novalidate>
+          <input class="trap" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <label>
+            Nome
+            <input name="name" type="text" maxlength="80" placeholder="Seu nome" required>
+          </label>
+
+          <label>
+            Serviço
+            <select name="service" required data-service-select>
+              <option value="">Selecione</option>
+            </select>
+          </label>
+
+          <label data-professional-field hidden>
+            Profissional
+            <select name="professional" data-professional-select>
+              <option value="">Selecione</option>
+            </select>
+          </label>
+
+          <div class="form-row">
+            <label data-date-field>
+              Data desejada
+              <input name="date" type="date" required>
+            </label>
+            <label data-time-field>
+              Horário desejado
+              <input name="time" type="time" required>
+            </label>
+          </div>
+
+          <label>
+            Observação
+            <textarea name="notes" maxlength="240" placeholder="Ex.: tenho preferência pelo período da tarde."></textarea>
+          </label>
+
+          <p class="field-error" data-form-error role="alert" hidden></p>
+          <button class="btn primary full" type="submit">Enviar solicitação pelo WhatsApp</button>
+          <pre class="booking-preview" data-booking-preview role="status" hidden></pre>
+          <p class="form-note">Nenhum dado sensível é salvo no navegador.</p>
+        </form>
+      </div>
+    </section>
+
+    <section id="galeria" class="section">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Galeria</p>
+        <h2>Um pouco do estilo do salão</h2>
+      </div>
+
+      <div class="gallery" data-gallery-grid></div>
+    </section>
+
+    <section class="section testimonials-section" data-testimonials-section hidden>
+      <div class="section-heading reveal">
+        <p class="section-kicker">Depoimentos</p>
+        <h2>O que as clientes dizem</h2>
+      </div>
+      <div class="testimonials" data-testimonials-grid></div>
+    </section>
+
+    <section id="localizacao" class="section location">
+      <div class="reveal">
+        <p class="section-kicker">Localização</p>
+        <h2 data-location-title></h2>
+        <p class="section-text" data-location-address></p>
+        <div class="hours-list" data-hours-list></div>
+        <div class="link-row">
+          <a class="btn ghost" data-maps-link target="_blank" rel="noreferrer">Abrir no mapa</a>
+          <a class="btn ghost" data-instagram-link target="_blank" rel="noreferrer" hidden>Instagram</a>
+        </div>
+      </div>
+      <div class="map-card reveal">
+        <span data-map-title>Mapa</span>
+        <small data-map-subtitle></small>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq-section" hidden>
+      <div class="section-heading reveal">
+        <p class="section-kicker">FAQ</p>
+        <h2>Dúvidas frequentes</h2>
+      </div>
+      <div class="faq-list" data-faq-list></div>
+    </section>
+  </main>
+
+  <footer class="footer" hidden>
+    <span data-footer-text></span>
+    <a href="#agenda">Solicitar horário</a>
+  </footer>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

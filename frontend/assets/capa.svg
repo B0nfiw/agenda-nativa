@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-label="Imagem demonstrativa de capa">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2A1A27"/>
+      <stop offset="0.52" stop-color="#A84C6A"/>
+      <stop offset="1" stop-color="#F2E6D8"/>
+    </linearGradient>
+    <radialGradient id="light" cx="35%" cy="28%" r="45%">
+      <stop offset="0" stop-color="#FFF9F2" stop-opacity=".95"/>
+      <stop offset=".45" stop-color="#F2E6D8" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#F2E6D8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <circle cx="380" cy="410" r="420" fill="url(#light)"/>
+  <path d="M0 1090c175-89 350-124 525-105 242 26 426 141 675 63v452H0v-410Z" fill="#171016" opacity=".64"/>
+  <path d="M248 1004c105-215 221-315 348-300 168 20 235 229 402 214 77-7 142-61 202-153v735H248v-496Z" fill="#3A1728" opacity=".62"/>
+  <path d="M366 694c74-128 174-192 301-192 108 0 209 46 304 138-82-24-157-14-225 31-94 61-142 171-286 141-54-11-85-45-94-118Z" fill="#FFF9F2" opacity=".78"/>
+  <circle cx="737" cy="522" r="88" fill="#A8B9A3" opacity=".78"/>
+</svg>
